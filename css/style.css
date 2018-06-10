@@ -1,0 +1,55 @@
+canvas {
+	top: 56px;
+	position: absolute;
+	cursor: none;
+}
+
+#info {
+	top: 66px;
+	position: absolute;
+	text-align: center;
+}
+
+#timer div, #points div{
+	font-size: 8vh;
+}
+#notAvailableOnPhone {
+	display: none;
+	margin-top:70px;
+}
+
+@media (max-width: 1279px) {
+	#notAvailableOnPhone {
+		display: flex;
+	}
+}
+
+#lightningCanvas + div#info{
+	background-color: rgba(255, 255, 255, 0.92);
+}
+
+#howToPlayContent .card[class~="col-md-10"], #aboutContent .card {
+	background-color: rgba(255, 255, 255, 0.92);
+	margin-top: 2%;
+}
+
+img[alt="spacekey"] {
+	margin-top: 15px;
+}
+
+#howToPlayContent .card[class~="col-md-10"] h4 {
+	margin-bottom: 0;
+	margin-top: 10px
+}
+
+#howToPlayContent .card .card-body, #aboutContent .card .card-body {
+	padding-top: 0;
+}
+
+#howToPlayContent, #aboutContent {
+	margin-top: 60px
+}
+
+#aboutContent table {
+	display: inline;
+}

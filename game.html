@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pirate's Revenge</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Pirate's Revenge</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="game.html">Game<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="how_to_play.html">How to play</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documentation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <canvas id="backgroundCanvas"></canvas>  <!--for water-->
+    <canvas id="map1Canvas"></canvas>        <!--for ground-->
+    <canvas id="map2Canvas"></canvas>        <!--for obstacles -->
+    <canvas id="map3Canvas"></canvas>        <!--for chests-->
+    <canvas id="botsCanvas"></canvas>        <!--for bots and spy-->
+    <canvas id="sniperCanvas"></canvas>      <!--for sniper player-->
+    <canvas id="loadingCanvas"></canvas>     <!--for loading msg-->
+
+
+    <div id="info">
+	    <div class="card">
+		    <div class="card-body">
+		      <b>Time left:</b>
+		      <div id="timer">
+		        <div id="timerMins">00</div>
+		        <div id="timerSecs">00</div>
+		      </div>
+		      <br>
+		      <br>
+		      <div id="points">
+		        <b>Master</b>
+		        <div id="sniperPoints">0</div>
+		        <b>Traitor</b>
+		        <div id="spyPoints">0</div>
+		        <button class="btn" type="button" id="clearPoints">Clear<br>points</button>
+		      </div>
+		    </div>
+	    </div>
+    </div>
+
+
+    <div id="notAvailableOnPhone" >
+	    <div class="alert alert-light col-sm-8 offset-sm-2" >
+	    You can't play this game on this device. Use the <s>force</s> computer, Luke!
+	    </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/botsMovePatterns.js"></script>
+    <script src="js/game.js"></script>
+
+  </body>
+
+</html>
